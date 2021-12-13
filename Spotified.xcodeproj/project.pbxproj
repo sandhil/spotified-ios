@@ -1,0 +1,910 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032F9B237E6038521614E945 /* Pods_Spotified.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F51C9E6BDE63F7E1AAB637 /* Pods_Spotified.framework */; };
+		0501196D27649676001CB5B2 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0501196C27649676001CB5B2 /* ViewModelFactory.swift */; };
+		0501197627649BBC001CB5B2 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0501197527649BBC001CB5B2 /* SessionManager.swift */; };
+		0501197827649BCF001CB5B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0501197727649BCF001CB5B2 /* Constants.swift */; };
+		0501197B27649C83001CB5B2 /* SpotifiedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0501197A27649C83001CB5B2 /* SpotifiedApi.swift */; };
+		0501197E27649FC8001CB5B2 /* URL+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0501197D27649FC8001CB5B2 /* URL+Util.swift */; };
+		050119802764A00E001CB5B2 /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0501197F2764A00E001CB5B2 /* String+Util.swift */; };
+		05206CED274B6016004B45BB /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206CEC274B6016004B45BB /* BackendClient.swift */; };
+		05206CF0274C103A004B45BB /* AuthorizationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206CEF274C103A004B45BB /* AuthorizationResponse.swift */; };
+		05206CF2274C1156004B45BB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206CF1274C1156004B45BB /* NetworkError.swift */; };
+		05206CF4274C12EC004B45BB /* WelcomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206CF3274C12EC004B45BB /* WelcomeScreenViewModel.swift */; };
+		05206CF7274C1B81004B45BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05206CF6274C1B81004B45BB /* AppDelegate.swift */; };
+		05373774271C48F700261C23 /* SpotifiedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05373773271C48F700261C23 /* SpotifiedApp.swift */; };
+		05373776271C48F700261C23 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05373775271C48F700261C23 /* WelcomeView.swift */; };
+		05373778271C48FB00261C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05373777271C48FB00261C23 /* Assets.xcassets */; };
+		0537377B271C48FB00261C23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0537377A271C48FB00261C23 /* Preview Assets.xcassets */; };
+		05373785271C48FC00261C23 /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05373784271C48FC00261C23 /* SwiftUIDemoTests.swift */; };
+		0537378F271C48FC00261C23 /* SwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0537378E271C48FC00261C23 /* SwiftUIDemoUITests.swift */; };
+		05373791271C48FC00261C23 /* SwiftUIDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05373790271C48FC00261C23 /* SwiftUIDemoUITestsLaunchTests.swift */; };
+		05DB7DAF27651E05005FEA74 /* WebViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DB7DAE27651E05005FEA74 /* WebViewViewModel.swift */; };
+		05DB7DB127651E4C005FEA74 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DB7DB027651E4C005FEA74 /* WebViewContainer.swift */; };
+		830F10544FABAB2C637945F1 /* Pods_SpotifiedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F85BA102A2AA8EC842522B /* Pods_SpotifiedTests.framework */; };
+		C73A95AD50FAD687DEF1764E /* Pods_Spotified_SpotifiedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A353A2F3CE0E512EFBD828F1 /* Pods_Spotified_SpotifiedUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05373781271C48FC00261C23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05373768271C48F700261C23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0537376F271C48F700261C23;
+			remoteInfo = SwiftUIDemo;
+		};
+		0537378B271C48FC00261C23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05373768271C48F700261C23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0537376F271C48F700261C23;
+			remoteInfo = SwiftUIDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0501196C27649676001CB5B2 /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		0501197527649BBC001CB5B2 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		0501197727649BCF001CB5B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0501197A27649C83001CB5B2 /* SpotifiedApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifiedApi.swift; sourceTree = "<group>"; };
+		0501197D27649FC8001CB5B2 /* URL+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Util.swift"; sourceTree = "<group>"; };
+		0501197F2764A00E001CB5B2 /* String+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Util.swift"; sourceTree = "<group>"; };
+		05206CEC274B6016004B45BB /* BackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
+		05206CEF274C103A004B45BB /* AuthorizationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationResponse.swift; sourceTree = "<group>"; };
+		05206CF1274C1156004B45BB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		05206CF3274C12EC004B45BB /* WelcomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewModel.swift; sourceTree = "<group>"; };
+		05206CF5274C1919004B45BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05206CF6274C1B81004B45BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05373770271C48F700261C23 /* Spotified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotified.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05373773271C48F700261C23 /* SpotifiedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifiedApp.swift; sourceTree = "<group>"; };
+		05373775271C48F700261C23 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		05373777271C48FB00261C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0537377A271C48FB00261C23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05373780271C48FC00261C23 /* SpotifiedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifiedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05373784271C48FC00261C23 /* SwiftUIDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoTests.swift; sourceTree = "<group>"; };
+		0537378A271C48FC00261C23 /* SpotifiedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifiedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0537378E271C48FC00261C23 /* SwiftUIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITests.swift; sourceTree = "<group>"; };
+		05373790271C48FC00261C23 /* SwiftUIDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05DB7DAE27651E05005FEA74 /* WebViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewModel.swift; sourceTree = "<group>"; };
+		05DB7DB027651E4C005FEA74 /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
+		0C5E0C287A6938CF95A55285 /* Pods-SpotifiedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifiedTests.release.xcconfig"; path = "Target Support Files/Pods-SpotifiedTests/Pods-SpotifiedTests.release.xcconfig"; sourceTree = "<group>"; };
+		84F9EFBB41C8276E0720AFFB /* Pods-Spotified.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotified.debug.xcconfig"; path = "Target Support Files/Pods-Spotified/Pods-Spotified.debug.xcconfig"; sourceTree = "<group>"; };
+		A353A2F3CE0E512EFBD828F1 /* Pods_Spotified_SpotifiedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotified_SpotifiedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAABD61123707C5A9DFD36F2 /* Pods-Spotified.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotified.release.xcconfig"; path = "Target Support Files/Pods-Spotified/Pods-Spotified.release.xcconfig"; sourceTree = "<group>"; };
+		C4F85BA102A2AA8EC842522B /* Pods_SpotifiedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifiedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31ACDCC63622DC594B9FC73 /* Pods-Spotified-SpotifiedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotified-SpotifiedUITests.release.xcconfig"; path = "Target Support Files/Pods-Spotified-SpotifiedUITests/Pods-Spotified-SpotifiedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6336309D3236F9F860A49C0 /* Pods-SpotifiedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifiedTests.debug.xcconfig"; path = "Target Support Files/Pods-SpotifiedTests/Pods-SpotifiedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3F51C9E6BDE63F7E1AAB637 /* Pods_Spotified.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotified.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE10929606A4E4653EF0975 /* Pods-Spotified-SpotifiedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotified-SpotifiedUITests.debug.xcconfig"; path = "Target Support Files/Pods-Spotified-SpotifiedUITests/Pods-Spotified-SpotifiedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0537376D271C48F700261C23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032F9B237E6038521614E945 /* Pods_Spotified.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0537377D271C48FC00261C23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830F10544FABAB2C637945F1 /* Pods_SpotifiedTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05373787271C48FC00261C23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73A95AD50FAD687DEF1764E /* Pods_Spotified_SpotifiedUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0501196B276494F7001CB5B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0501196F27649700001CB5B2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				05DB7DAD27651DEC005FEA74 /* WebView */,
+				0501197927649BD6001CB5B2 /* Common */,
+				0501197427649BA5001CB5B2 /* Managers */,
+				0501196C27649676001CB5B2 /* ViewModelFactory.swift */,
+				05206CF6274C1B81004B45BB /* AppDelegate.swift */,
+				05373773271C48F700261C23 /* SpotifiedApp.swift */,
+				05CB4A2B27498363002C0DBC /* Model */,
+				0501196B276494F7001CB5B2 /* Home */,
+				05CB4A2A274975DF002C0DBC /* Welcome */,
+				0501197727649BCF001CB5B2 /* Constants.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		050119702764973F001CB5B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05206CF5274C1919004B45BB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		050119712764975C001CB5B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05373777271C48FB00261C23 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0501197427649BA5001CB5B2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0501197527649BBC001CB5B2 /* SessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0501197927649BD6001CB5B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0501197C27649FB4001CB5B2 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0501197C27649FB4001CB5B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0501197D27649FC8001CB5B2 /* URL+Util.swift */,
+				0501197F2764A00E001CB5B2 /* String+Util.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05206CEE274C1024004B45BB /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				05206CEF274C103A004B45BB /* AuthorizationResponse.swift */,
+				05206CF1274C1156004B45BB /* NetworkError.swift */,
+				0501197A27649C83001CB5B2 /* SpotifiedApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		05373767271C48F700261C23 = {
+			isa = PBXGroup;
+			children = (
+				05373772271C48F700261C23 /* Spotified */,
+				05373783271C48FC00261C23 /* SwiftUIDemoTests */,
+				0537378D271C48FC00261C23 /* SwiftUIDemoUITests */,
+				05373771271C48F700261C23 /* Products */,
+				F3B9891DC6BCC1CE550348AB /* Pods */,
+				BAEA526B4578F1D90D220FD4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05373771271C48F700261C23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05373770271C48F700261C23 /* Spotified.app */,
+				05373780271C48FC00261C23 /* SpotifiedTests.xctest */,
+				0537378A271C48FC00261C23 /* SpotifiedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05373772271C48F700261C23 /* Spotified */ = {
+			isa = PBXGroup;
+			children = (
+				050119712764975C001CB5B2 /* Resources */,
+				050119702764973F001CB5B2 /* Supporting Files */,
+				0501196F27649700001CB5B2 /* Source */,
+				05373779271C48FB00261C23 /* Preview Content */,
+			);
+			path = Spotified;
+			sourceTree = "<group>";
+		};
+		05373779271C48FB00261C23 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0537377A271C48FB00261C23 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05373783271C48FC00261C23 /* SwiftUIDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				05373784271C48FC00261C23 /* SwiftUIDemoTests.swift */,
+			);
+			path = SwiftUIDemoTests;
+			sourceTree = "<group>";
+		};
+		0537378D271C48FC00261C23 /* SwiftUIDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0537378E271C48FC00261C23 /* SwiftUIDemoUITests.swift */,
+				05373790271C48FC00261C23 /* SwiftUIDemoUITestsLaunchTests.swift */,
+			);
+			path = SwiftUIDemoUITests;
+			sourceTree = "<group>";
+		};
+		05CB4A2A274975DF002C0DBC /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				05373775271C48F700261C23 /* WelcomeView.swift */,
+				05206CF3274C12EC004B45BB /* WelcomeScreenViewModel.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		05CB4A2B27498363002C0DBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05206CEE274C1024004B45BB /* Api */,
+				05206CEC274B6016004B45BB /* BackendClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05DB7DAD27651DEC005FEA74 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				05DB7DAE27651E05005FEA74 /* WebViewViewModel.swift */,
+				05DB7DB027651E4C005FEA74 /* WebViewContainer.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		BAEA526B4578F1D90D220FD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3F51C9E6BDE63F7E1AAB637 /* Pods_Spotified.framework */,
+				A353A2F3CE0E512EFBD828F1 /* Pods_Spotified_SpotifiedUITests.framework */,
+				C4F85BA102A2AA8EC842522B /* Pods_SpotifiedTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3B9891DC6BCC1CE550348AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84F9EFBB41C8276E0720AFFB /* Pods-Spotified.debug.xcconfig */,
+				BAABD61123707C5A9DFD36F2 /* Pods-Spotified.release.xcconfig */,
+				EFE10929606A4E4653EF0975 /* Pods-Spotified-SpotifiedUITests.debug.xcconfig */,
+				D31ACDCC63622DC594B9FC73 /* Pods-Spotified-SpotifiedUITests.release.xcconfig */,
+				D6336309D3236F9F860A49C0 /* Pods-SpotifiedTests.debug.xcconfig */,
+				0C5E0C287A6938CF95A55285 /* Pods-SpotifiedTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0537376F271C48F700261C23 /* Spotified */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05373794271C48FC00261C23 /* Build configuration list for PBXNativeTarget "Spotified" */;
+			buildPhases = (
+				F9F462C350389D09FA184153 /* [CP] Check Pods Manifest.lock */,
+				0537376C271C48F700261C23 /* Sources */,
+				0537376D271C48F700261C23 /* Frameworks */,
+				0537376E271C48F700261C23 /* Resources */,
+				5A8C2174DA6ABB91AAE48444 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spotified;
+			productName = SwiftUIDemo;
+			productReference = 05373770271C48F700261C23 /* Spotified.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0537377F271C48FC00261C23 /* SpotifiedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05373797271C48FC00261C23 /* Build configuration list for PBXNativeTarget "SpotifiedTests" */;
+			buildPhases = (
+				7A69C81776636691A839DB58 /* [CP] Check Pods Manifest.lock */,
+				0537377C271C48FC00261C23 /* Sources */,
+				0537377D271C48FC00261C23 /* Frameworks */,
+				0537377E271C48FC00261C23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05373782271C48FC00261C23 /* PBXTargetDependency */,
+			);
+			name = SpotifiedTests;
+			productName = SwiftUIDemoTests;
+			productReference = 05373780271C48FC00261C23 /* SpotifiedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05373789271C48FC00261C23 /* SpotifiedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0537379A271C48FC00261C23 /* Build configuration list for PBXNativeTarget "SpotifiedUITests" */;
+			buildPhases = (
+				3FED8C819F8B7AF81C0C5333 /* [CP] Check Pods Manifest.lock */,
+				05373786271C48FC00261C23 /* Sources */,
+				05373787271C48FC00261C23 /* Frameworks */,
+				05373788271C48FC00261C23 /* Resources */,
+				882AA70871C9E400429CDC64 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0537378C271C48FC00261C23 /* PBXTargetDependency */,
+			);
+			name = SpotifiedUITests;
+			productName = SwiftUIDemoUITests;
+			productReference = 0537378A271C48FC00261C23 /* SpotifiedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05373768271C48F700261C23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					0537376F271C48F700261C23 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0537377F271C48FC00261C23 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0537376F271C48F700261C23;
+					};
+					05373789271C48FC00261C23 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0537376F271C48F700261C23;
+					};
+				};
+			};
+			buildConfigurationList = 0537376B271C48F700261C23 /* Build configuration list for PBXProject "Spotified" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05373767271C48F700261C23;
+			productRefGroup = 05373771271C48F700261C23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0537376F271C48F700261C23 /* Spotified */,
+				0537377F271C48FC00261C23 /* SpotifiedTests */,
+				05373789271C48FC00261C23 /* SpotifiedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0537376E271C48F700261C23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0537377B271C48FB00261C23 /* Preview Assets.xcassets in Resources */,
+				05373778271C48FB00261C23 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0537377E271C48FC00261C23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05373788271C48FC00261C23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FED8C819F8B7AF81C0C5333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spotified-SpotifiedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A8C2174DA6ABB91AAE48444 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotified/Pods-Spotified-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotified/Pods-Spotified-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spotified/Pods-Spotified-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A69C81776636691A839DB58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotifiedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		882AA70871C9E400429CDC64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotified-SpotifiedUITests/Pods-Spotified-SpotifiedUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spotified-SpotifiedUITests/Pods-Spotified-SpotifiedUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spotified-SpotifiedUITests/Pods-Spotified-SpotifiedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F462C350389D09FA184153 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spotified-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0537376C271C48F700261C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0501197827649BCF001CB5B2 /* Constants.swift in Sources */,
+				05DB7DB127651E4C005FEA74 /* WebViewContainer.swift in Sources */,
+				0501197E27649FC8001CB5B2 /* URL+Util.swift in Sources */,
+				05206CED274B6016004B45BB /* BackendClient.swift in Sources */,
+				05373776271C48F700261C23 /* WelcomeView.swift in Sources */,
+				05206CF0274C103A004B45BB /* AuthorizationResponse.swift in Sources */,
+				05373774271C48F700261C23 /* SpotifiedApp.swift in Sources */,
+				05206CF7274C1B81004B45BB /* AppDelegate.swift in Sources */,
+				0501196D27649676001CB5B2 /* ViewModelFactory.swift in Sources */,
+				05206CF2274C1156004B45BB /* NetworkError.swift in Sources */,
+				050119802764A00E001CB5B2 /* String+Util.swift in Sources */,
+				05DB7DAF27651E05005FEA74 /* WebViewViewModel.swift in Sources */,
+				0501197627649BBC001CB5B2 /* SessionManager.swift in Sources */,
+				0501197B27649C83001CB5B2 /* SpotifiedApi.swift in Sources */,
+				05206CF4274C12EC004B45BB /* WelcomeScreenViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0537377C271C48FC00261C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05373785271C48FC00261C23 /* SwiftUIDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05373786271C48FC00261C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0537378F271C48FC00261C23 /* SwiftUIDemoUITests.swift in Sources */,
+				05373791271C48FC00261C23 /* SwiftUIDemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05373782271C48FC00261C23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0537376F271C48F700261C23 /* Spotified */;
+			targetProxy = 05373781271C48FC00261C23 /* PBXContainerItemProxy */;
+		};
+		0537378C271C48FC00261C23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0537376F271C48F700261C23 /* Spotified */;
+			targetProxy = 0537378B271C48FC00261C23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05373792271C48FC00261C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05373793271C48FC00261C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05373795271C48FC00261C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F9EFBB41C8276E0720AFFB /* Pods-Spotified.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spotified/Preview Content\"";
+				DEVELOPMENT_TEAM = KN7PU5BCG7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spotified/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandhil.spotified;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05373796271C48FC00261C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAABD61123707C5A9DFD36F2 /* Pods-Spotified.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spotified/Preview Content\"";
+				DEVELOPMENT_TEAM = KN7PU5BCG7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spotified/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandhil.spotified;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05373798271C48FC00261C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6336309D3236F9F860A49C0 /* Pods-SpotifiedTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN7PU5BCG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.swiftui.SwiftUIDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotified.app/Spotified";
+			};
+			name = Debug;
+		};
+		05373799271C48FC00261C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C5E0C287A6938CF95A55285 /* Pods-SpotifiedTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN7PU5BCG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.swiftui.SwiftUIDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotified.app/Spotified";
+			};
+			name = Release;
+		};
+		0537379B271C48FC00261C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE10929606A4E4653EF0975 /* Pods-Spotified-SpotifiedUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN7PU5BCG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.swiftui.SwiftUIDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUIDemo;
+			};
+			name = Debug;
+		};
+		0537379C271C48FC00261C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31ACDCC63622DC594B9FC73 /* Pods-Spotified-SpotifiedUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN7PU5BCG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.swiftui.SwiftUIDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUIDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0537376B271C48F700261C23 /* Build configuration list for PBXProject "Spotified" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05373792271C48FC00261C23 /* Debug */,
+				05373793271C48FC00261C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05373794271C48FC00261C23 /* Build configuration list for PBXNativeTarget "Spotified" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05373795271C48FC00261C23 /* Debug */,
+				05373796271C48FC00261C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05373797271C48FC00261C23 /* Build configuration list for PBXNativeTarget "SpotifiedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05373798271C48FC00261C23 /* Debug */,
+				05373799271C48FC00261C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0537379A271C48FC00261C23 /* Build configuration list for PBXNativeTarget "SpotifiedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0537379B271C48FC00261C23 /* Debug */,
+				0537379C271C48FC00261C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05373768271C48F700261C23 /* Project object */;
+}

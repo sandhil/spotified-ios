@@ -1,0 +1,6 @@
+framework module Pods_SpotifiedTests {
+  umbrella header "Pods-SpotifiedTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
