@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.4.3)
+  - SpotifyLogin (0.1.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - SpotifyLogin (~> 0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SpotifyLogin
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  SpotifyLogin: 9cdf82ff13e5f37e5ddc7fd07cf9793a9ebd1124
+
+PODFILE CHECKSUM: 788ce98af2a6f06184d6d43078bf1471c4e2b711
+
+COCOAPODS: 1.11.2
